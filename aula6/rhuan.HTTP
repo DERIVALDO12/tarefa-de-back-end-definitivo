@@ -1,0 +1,29 @@
+### Buscar todas as canetas/lápis
+GET http://localhost:3000/caneta
+
+### Buscar a caneta/lápis com ID 1
+GET http://localhost:3000/caneta/1
+
+### Buscar uma caneta/lápis que não existe (gera erro 404)
+GET http://localhost:3000/caneta/99
+
+### Criar uma nova caneta/lápis
+POST http://localhost:3000/caneta
+Content-Type: application/json
+
+{
+  "tipo": "caneta azul",
+  "preço": 6.50
+}
+
+### Atualizar a caneta/lápis de id 1
+PUT http://localhost:3000/caneta/1
+Content-Type: application/json
+
+{
+  "tipo": "caneta preta",
+  "preço": 5.50
+}
+
+### Remover a caneta/lápis de id 2
+DELETE http://localhost:3000/caneta/2
